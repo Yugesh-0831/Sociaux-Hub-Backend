@@ -62,6 +62,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "build", "index.html"));
 });
 
-app.listen(8800, () => {
+app.listen(process.env.PORT, () => {
   console.log("backend server is readyy");
 });
